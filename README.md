@@ -1,9 +1,4 @@
 <p align="center">
-  <!-- banner / logo placeholder -->
-  <img alt="Raptor RAG Chatbot" src="https://via.placeholder.com/880x160.png?text=Raptor+RAG+Chatbot+%7C+TDS+Assistant" />
-</p>
-
-<p align="center">
   <h1 align="center">Raptor RAG Chatbot — TDS Assistant</h1>
   <em>Precision tax-document assistance with explainable Retrieval-Augmented Generation</em>
 </p>
