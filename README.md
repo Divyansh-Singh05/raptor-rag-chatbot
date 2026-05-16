@@ -17,10 +17,6 @@ One-line: Raptor RAG Chatbot (TDS Assistant) — an engineering-focused RAG syst
 
 ---
 
-<p align="center">
-  <!-- demo / GIF placeholder -->
-  <img alt="demo" src="https://via.placeholder.com/880x300.png?text=Demo+GIF+Placeholder" />
-</p>
 
 <p align="center">
   <a href="#installation">Installation</a> •
