@@ -235,26 +235,11 @@ Interpretation
 ---
 
 ## Roadmap
-
 - [ ] Swap file-based index for FAISS or Weaviate (scale)
 - [ ] CI + unit/integration tests
 - [ ] RBAC, audit logs, and tenant isolation for enterprise usage
 - [ ] Improve OCR with layout-aware models (Vision ML)
 - [ ] Add schema-less zero-shot extraction for unknown invoice formats
-
----
-
-## Contributing
-
-We welcome high-signal contributions. Please:
-1. Open an issue that describes the change or bug.
-2. Fork and create a focused branch: `git checkout -b feat/name`.
-3. Run linting and tests. Add tests for new functionality.
-4. Create a PR with a clear description and screenshots where applicable.
-
-Code style
-- Use type hints, write small pure functions, and include docstrings. Keep PRs scoped and atomic.
-
 ---
 
 ## Author
@@ -264,4 +249,3 @@ Divyansh Singh — creator & maintainer
 - GitHub: @Divyansh-Singh05
 - LinkedIn: https://www.linkedin.com/in/divyansh-singh05
 
-If you'd like, I will also add: CONTRIBUTING.md, CODE_OF_CONDUCT.md, CI workflow, and a .gitignore tuned for this project. Reply which to add and I'll commit them.
