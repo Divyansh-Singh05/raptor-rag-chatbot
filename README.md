@@ -67,25 +67,25 @@ Our innovation
 ## System architecture
 
 ```mermaid
-flowchart TD
-  subgraph Ingest[Ingestion]
-    A[Raw docs (PDF/PNG/TXT)] -->|OCR| B[Extracted text]
-    B --> C[Chunker (overlap configurable)]
-    C --> D[Embedder]
-    D --> E[Persisted index & metadata]
-  end
+---
+config:
+  layout: elk
+---
+flowchart LR
 
-  subgraph Query[Query / Serving]
-    Q[User query] --> R[Retriever: top-K by cosine]
-    R --> S[Context assembler (merge + trim)]
-    S --> T[Prompt → Azure OpenAI]
-    T --> U[LLM response (citations required)]
-    U --> V[Post-processor (normalize amounts/dates)]
-  end
+    A["Unstructured Legal PDFs<br/>TDS Laws • Circulars • Invoices"]:::source
+    B["Semantic Chunking<br/>+ Embeddings"]:::process
+    C["RAPTOR Tree Construction<br/>Recursive Clustering & Summarization"]:::tree
+    D["BFS + Backtracking Retrieval<br/>Root → Leaf Traversal"]:::query
+    E["Context-Aware TDS Classification<br/>194J(a) vs 194J(c)"]:::output
 
-  E --> R
-  style Ingest fill:#f0f9ff,stroke:#333,stroke-width:1px
-  style Query fill:#fff7f0,stroke:#333,stroke-width:1px
+    A --> B --> C --> D --> E
+
+    classDef source fill:#0f172a,stroke:#38bdf8,color:#fff,stroke-width:1.5px;
+    classDef process fill:#111827,stroke:#34d399,color:#fff,stroke-width:1.5px;
+    classDef tree fill:#312e81,stroke:#a78bfa,color:#fff,stroke-width:1.5px;
+    classDef query fill:#172554,stroke:#60a5fa,color:#fff,stroke-width:1.5px;
+    classDef output fill:#052e16,stroke:#4ade80,color:#fff,stroke-width:2px;
 ```
 
 Execution flow
