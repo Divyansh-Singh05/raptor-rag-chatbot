@@ -7,7 +7,6 @@
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white" alt="python" />
   <img src="https://img.shields.io/badge/Streamlit-%E2%98%85-orange?logo=streamlit&logoColor=white" alt="streamlit" />
   <img src="https://img.shields.io/badge/Azure-OpenAI-0078D4?logo=microsoftazure&logoColor=white" alt="azure" />
-  <img src="https://img.shields.io/badge/license-MIT-green" alt="license" />
   <img src="https://img.shields.io/badge/status-Prototype-yellow" alt="status" />
 </p>
 
@@ -255,12 +254,6 @@ We welcome high-signal contributions. Please:
 
 Code style
 - Use type hints, write small pure functions, and include docstrings. Keep PRs scoped and atomic.
-
----
-
-## License
-
-MIT © 2026 — see LICENSE for details.
 
 ---
 
